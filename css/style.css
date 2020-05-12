@@ -19,3 +19,8 @@ button {
     color: white;
 }
 
+:hover {
+    background-color: white;
+    color: gray;  
+}
+

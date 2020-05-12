@@ -7,17 +7,11 @@ const displayEl = document.getElementById('display');
 addBtnEl.addEventListener('click', addNumber);
 subtractBtnEl.addEventListener('click', subtractNumber);
 
-function render() {
-    displayEl.textContent = inputEl.value
-}
-
 function addNumber (){
-   displayEl.value += inputEl.value;
-    render();
+   displayEl.innerText = parseInt(inputEl.value) + parseInt(displayEl.innerText);
 }
 
 function subtractNumber (){
-    displayEl.value -= inputEl.value;
-    render();
+    displayEl.innerText = parseInt(displayEl.innerText) - inputEl.value;
 }
 
